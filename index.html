@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500&family=Raleway:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <title>Meubly</title>
@@ -19,10 +19,12 @@
               raleway: ["Raleway", "sans-serif"],
               montserrat: ["Montserrat", "sans-serif"],
               poppins: ["Poppins", "sans-serif"],
+              libre: ['"Libre Baskerville"', "sans-serif"],
             },
             spacing: {
               70: "70px",
-              115: "115px",
+              115: "80px",
+              900: "900px",
             },
           },
         },
@@ -30,10 +32,14 @@
     </script>
   </head>
   <body>
-    <nav class="px-70 h-115 flex items-center justify-between bg-slate-50">
-      <h1 class="font-nunito font-bold text-5xl text-orange-400">Meubly.</h1>
+    <nav
+      class="px-70 h-20 flex items-center justify-between bg-slate-50 sticky top-0 z-20"
+    >
+      <a href="#" class="font-nunito font-bold text-3xl text-orange-400"
+        >Meubly.</a
+      >
       <ul
-        class="flex items-center gap-14 font-raleway text-2xl text-gray-400 font-semibold"
+        class="flex items-center gap-14 font-raleway text-base text-gray-600 font-semibold"
       >
         <li class="cursor-pointer hover:text-orange-500 duration-200">Home</li>
         <li class="cursor-pointer hover:text-orange-500 duration-200">
@@ -52,7 +58,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="h-7 hover:text-orange-500 duration-200"
+            class="h-6 hover:text-orange-500 duration-200"
           >
             <path
               stroke-linecap="round"
@@ -68,7 +74,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="h-7 hover:text-orange-500 duration-200"
+            class="h-6 hover:text-orange-500 duration-200"
           >
             <path
               stroke-linecap="round"
@@ -84,7 +90,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="h-7 hover:text-orange-500 duration-200"
+            class="h-6 hover:text-orange-500 duration-200"
           >
             <path
               stroke-linecap="round"
@@ -95,5 +101,211 @@
         </button>
       </div>
     </nav>
+    <!-- Hero -->
+    <div class="h-[calc(100vh_-_5rem)] relative">
+      <img src="./assets/eross.png" alt="" class="h-full w-full object-cover" />
+      <div class="absolute top-0 w-full flex flex-col items-center gap-4 pt-4">
+        <h1
+          class="font-libre w-[400px] text-4xl font-bold text-[#4E5A99] tracking-[0.2rem] text-center leading-relaxed"
+        >
+          Make Your Home More Minimalist
+        </h1>
+        <p class="w-5/12 text-center text-gray-500">
+          Choose for the best furniture minimalst to complete your home. we
+          stand for minimalst & style in your home.
+        </p>
+        <button
+          class="bg-gradient-to-tr from-orange-500 to-orange-400 px-3 py-2 text-white capitalize rounded-md font-semibold text-sm hover:shadow-lg"
+        >
+          explore all product
+        </button>
+      </div>
+    </div>
+    <!-- Product -->
+    <div class="px-70 h-[calc(100vh_-_5rem)] pt-10">
+      <div class="text-center w-full flex flex-col items-center gap-4">
+        <h2
+          class="text-orange-500 w-[340px] font-raleway text-3xl font-extrabold text-center capitalize"
+        >
+          Most product populer of the week
+        </h2>
+        <p class="text-gray-500 font-montserrat">
+          This is the most frequently purchased product this week
+        </p>
+      </div>
+      <div class="mt-14 w-full flex items-center justify-center gap-10">
+        <div class="w-1/6 h-80 flex flex-col items-center relative group">
+          <div
+            class="bg-gray-100 w-full h-[90%] absolute flex flex-col justify-end bottom-0 rounded-lg shadow-lg group-hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-1 p-4 font-poppins">
+              <strong class="">Tosca Compy</strong>
+              <span class="text-sm text-gray-600">$130,00</span>
+              <div class="flex items-center gap-1">
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#86999B] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#7293A0] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#D8CFAF] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#BBBE64] rounded-full"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/sofa-1.png"
+            alt=""
+            class="w-[80%] object-cover absolute group-hover:-translate-y-6 duration-200"
+          />
+        </div>
+        <div class="w-1/6 h-80 flex flex-col items-center relative group">
+          <div
+            class="bg-gray-100 w-full h-[90%] absolute flex flex-col justify-end bottom-0 rounded-lg shadow-lg group-hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-1 p-4 font-poppins">
+              <strong class="">Tosca Compy</strong>
+              <span class="text-sm text-gray-600">$130,00</span>
+              <div class="flex items-center gap-1">
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#86999B] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#7293A0] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#D8CFAF] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#BBBE64] rounded-full"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/sofa-2.png"
+            alt=""
+            class="w-[80%] object-cover absolute group-hover:-translate-y-6 duration-200"
+          />
+        </div>
+        <div class="w-1/6 h-80 flex flex-col items-center relative group">
+          <div
+            class="bg-gray-100 w-full h-[90%] absolute flex flex-col justify-end bottom-0 rounded-lg shadow-lg group-hover:shadow-xl"
+          >
+            <div class="flex flex-col gap-1 p-4 font-poppins">
+              <strong class="">Tosca Compy</strong>
+              <span class="text-sm text-gray-600">$130,00</span>
+              <div class="flex items-center gap-1">
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#86999B] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#7293A0] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#D8CFAF] rounded-full"></span>
+                </button>
+                <button
+                  class="h-5 w-5 hover:bg-white border hover:border-gray-400 rounded-full flex items-center justify-center"
+                >
+                  <span class="h-4 w-4 bg-[#BBBE64] rounded-full"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/sofa-3.png"
+            alt=""
+            class="w-[80%] object-cover absolute group-hover:-translate-y-6 duration-200"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Benefit -->
+    <div class="px-70 h-[calc(100vh_-_5rem)] pt-10">
+      <div class="text-center w-full flex flex-col items-center gap-4">
+        <h2
+          class="text-orange-500 w-[340px] font-raleway text-3xl font-extrabold text-center capitalize"
+        >
+          Your Benefits
+        </h2>
+        <p class="text-gray-500 w-1/2 font-montserrat">
+          We have already trendy modern and minimalist furniture pieces will
+          make your office or home more efficient. So, here are the benefits
+          that you need to know.
+        </p>
+      </div>
+      <div class="mt-20 w-full flex items-start justify-center font-monsterrat">
+        <div class="w-[20%] flex flex-col gap-2 items-start">
+          <img src="./assets/icons/g-1.png" alt="" class="h-10" />
+          <strong class="w-[80%]">Fast & Free Worldwide Shipping</strong>
+          <p class="text-sm w-[60%] text-gray-700">
+            we will ship your order free and arrive faster with warranty
+          </p>
+        </div>
+        <div class="w-[20%] flex flex-col gap-2 items-start">
+          <img src="./assets/icons/g-2.png" alt="" class="h-10" />
+          <strong class="w-[80%]">Overall Product Guarantee</strong>
+          <p class="text-sm w-[60%] text-gray-700">
+            we will give guarantee for overall product purchase
+          </p>
+        </div>
+        <div class="w-[20%] flex flex-col gap-2 items-start">
+          <img src="./assets/icons/g-3.png" alt="" class="h-10" />
+          <strong class="w-[80%]">Free Counsulting 24/7</strong>
+          <p class="text-sm w-[60%] text-gray-700">
+            24/7 support is a kind of support that is available throughout
+          </p>
+        </div>
+        <div class="w-[20%] flex flex-col gap-2 items-start">
+          <img src="./assets/icons/g-4.png" alt="" class="h-10" />
+          <strong class="w-[80%]">Your Special Price Matching</strong>
+          <p class="text-sm w-[60%] text-gray-700">
+            we give u special price, undoubted. Only for you!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Collection -->
+    <div class="px-70 h-[calc(100vh_-_5rem)] pt-10">
+      <div class="text-center w-full flex flex-col items-center gap-4">
+        <h2
+          class="text-orange-500 w-[340px] font-raleway text-3xl font-extrabold text-center capitalize"
+        >
+          Featured Collection
+        </h2>
+        <p class="text-gray-500 w-1/2 font-montserrat">
+          We have some featured collection who can help as you wish and still
+          make minimalist style in furniture. So, here are the Featured
+          Collection that you need to know.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
