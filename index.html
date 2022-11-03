@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;500&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500&family=Raleway:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,500&family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <title>Meubly</title>
@@ -33,7 +33,8 @@
   </head>
   <body>
     <nav
-      class="px-70 h-20 flex items-center justify-between bg-slate-50 sticky top-0 z-20"
+      class="px-70 h-20 flex items-center justify-between bg-slate-50 sticky top-0"
+      style="z-index: 999"
     >
       <a href="#" class="font-nunito font-bold text-3xl text-orange-400"
         >Meubly.</a
@@ -264,28 +265,28 @@
       <div class="mt-20 w-full flex items-start justify-center font-monsterrat">
         <div class="w-[20%] flex flex-col gap-2 items-start">
           <img src="./assets/icons/g-1.png" alt="" class="h-10" />
-          <strong class="w-[80%]">Fast & Free Worldwide Shipping</strong>
+          <strong class="">Fast & Free Worldwide Shipping</strong>
           <p class="text-sm w-[60%] text-gray-700">
             we will ship your order free and arrive faster with warranty
           </p>
         </div>
         <div class="w-[20%] flex flex-col gap-2 items-start">
           <img src="./assets/icons/g-2.png" alt="" class="h-10" />
-          <strong class="w-[80%]">Overall Product Guarantee</strong>
+          <strong class="">Overall Product Guarantee</strong>
           <p class="text-sm w-[60%] text-gray-700">
             we will give guarantee for overall product purchase
           </p>
         </div>
         <div class="w-[20%] flex flex-col gap-2 items-start">
           <img src="./assets/icons/g-3.png" alt="" class="h-10" />
-          <strong class="w-[80%]">Free Counsulting 24/7</strong>
+          <strong class="">Free Counsulting 24/7</strong>
           <p class="text-sm w-[60%] text-gray-700">
             24/7 support is a kind of support that is available throughout
           </p>
         </div>
         <div class="w-[20%] flex flex-col gap-2 items-start">
           <img src="./assets/icons/g-4.png" alt="" class="h-10" />
-          <strong class="w-[80%]">Your Special Price Matching</strong>
+          <strong class="">Your Special Price Matching</strong>
           <p class="text-sm w-[60%] text-gray-700">
             we give u special price, undoubted. Only for you!
           </p>
@@ -293,7 +294,7 @@
       </div>
     </div>
     <!-- Featured Collection -->
-    <div class="px-70 h-[calc(100vh_-_5rem)] pt-10">
+    <div class="px-70 pt-10">
       <div class="text-center w-full flex flex-col items-center gap-4">
         <h2
           class="text-orange-500 w-[340px] font-raleway text-3xl font-extrabold text-center capitalize"
@@ -306,6 +307,141 @@
           Collection that you need to know.
         </p>
       </div>
+      <div class="w-full flex justify-between gap-6 mt-20">
+        <div class="flex-1 flex justify-center">
+          <img src="./assets/sofa-4.png" alt="" class="h-[506px]" />
+        </div>
+        <div class="flex-1 flex flex-col justify-center items-start gap-10">
+          <h2 class="font-raleway text-5xl font-bold leading-normal">
+            <span class="text-orange-500">Meubly</span> Sofa<br />
+            Collection 2022
+          </h2>
+          <p class="font-monsterrat">
+            We here at Meubly pride ourselves in trying to give the best
+            possible selection of products and overall customer service. With a
+            minimalistm design, this stylish sofa was created with the purpose
+            of intensifying the relationship between furniture and owner.
+          </p>
+          <button class="font-poppins relative">
+            <span
+              class="h-[50px] w-[197px] block border border-orange-500 bg-red absolute"
+            ></span>
+            <span
+              class="h-[50px] w-[197px] border border-orange-500 bg-white absolute -top-2 -left-2 flex items-center justify-center"
+              >Learn More</span
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="px-70 pt-10">
+      <div class="text-center w-full flex flex-col items-center gap-4">
+        <h2
+          class="text-orange-500 w-[340px] font-raleway text-3xl font-extrabold text-center capitalize"
+        >
+          Featured Collection
+        </h2>
+        <p class="text-gray-500 w-1/2 font-montserrat">
+          We have some featured collection who can help as you wish and still
+          make minimalist style in furniture. So, here are the Featured
+          Collection that you need to know.
+        </p>
+      </div>
+      <div class="w-full flex flex-row-reverse justify-between gap-6 mt-20">
+        <div class="flex-1 flex items-start justify-center">
+          <img src="./assets/sofa-5.png" alt="" class="h-[506px]" />
+        </div>
+        <div class="flex-1 flex flex-col justify-center items-start gap-10">
+          <h2 class="font-raleway text-5xl font-bold leading-normal">
+            Many <span class="text-orange-500">Minimalist</span> <br />
+            Furniture
+          </h2>
+          <p class="font-monsterrat">
+            Decorate your furniture minimalist and living spaces can be done
+            while style minimalist, and can even help increase the beauty of
+            your furniture when done thoughtfully.
+          </p>
+          <button class="font-poppins relative">
+            <span
+              class="h-[50px] w-[197px] block border border-orange-500 bg-red absolute"
+            ></span>
+            <span
+              class="h-[50px] w-[197px] border border-orange-500 bg-white absolute -top-2 -left-2 flex items-center justify-center"
+              >Learn More</span
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe -->
+    <div class="h-[400px] overflow-hidden font-poppins py-10">
+      <div class="absolute h-full w-full px-70" style="z-index: 100">
+        <h2 class="text-5xl font-semibold">
+          Subscribe to *<br />
+          - our Newsletter
+        </h2>
+        <div class="mt-10 w-full flex justify-between items-start">
+          <p class="w-1/4">
+            Get weekly update about our product on your email, no spam
+            guaranteed we promise ✌️
+          </p>
+          <div class="flex-1 flex justify-end">
+            <div class="flex bg-white p-2">
+              <div
+                class="h-10 w-10 bg-gray-100 flex items-center justify-center rounded-sm"
+              >
+                <img src="./assets/email.png" alt="" class="" />
+              </div>
+              <input
+                type="text"
+                class="px-2 py-2 outline-none"
+                placeholder="yourmail@gmail.com"
+              />
+            </div>
+            <button
+              class="bg-black text-white px-3 py-2 font-semibold uppercase"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/bg.png"
+        alt=""
+        class="absolute bottom-0 -right-[500px]"
+        style="z-index: 90"
+      />
+    </div>
+    <div class="px-70 h-[calc(100vh_-_5rem)] pt-10 font-monsterrat text-center">
+      <h2 class="font-raleway uppercase text-xl tracking-wide">testimonials</h2>
+      <strong class="mt-4 block capitalize text-4xl text-orange-500"
+        >our customer says</strong
+      >
+      <div class="flex flex-col gap-5 items-center mt-10 relative">
+        <img src="./assets/qoute.png" alt="" class="h-7" />
+        <p class="w-1/2 text-center italic text-gray-500">
+          "Amazing customer service. The pricing is very competitive and there
+          is a great selection of furniture. The sales staff went out of their
+          way to help me with my selection. I purchased 3 sofa to update my
+          living room. I was just notified my couches are arriving my faster
+          than quoted. "
+        </p>
+        <div class="flex-1 flex items-center gap-4">
+          <img src="./assets/avatar/1.png" alt="" class="h-10 w-10" />
+          <img src="./assets/avatar/2.png" alt="" class="h-14 w-14" />
+          <img src="./assets/avatar/3.png" alt="" class="h-20 w-20" />
+          <img src="./assets/avatar/4.png" alt="" class="h-14 w-14" />
+          <img src="./assets/avatar/5.png" alt="" class="h-10 w-10" />
+        </div>
+        <div class="flex flex-col text-sm">
+          <span class="text-gray-700 font-semibold">Jacob Waren</span>
+          <span class="text-gray-500">Staf Informa, Inc</span>
+        </div>
+      </div>
+    </div>
+    <div class="h-[400px] overflow-hidden font-poppins py-10">
+      
     </div>
   </body>
 </html>
